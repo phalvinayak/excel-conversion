@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Excel To Docx</title>
+</head>
+<body>
+    <div class="body">
+        <div class="wrapper">
+            <h3>Excel to Word Conversion</h3>
+            <div class="button-wrapper">
+                <span class="label">
+                    Upload Excel File
+                </span>
+                <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File">
+            </div>
+            <div class="loader">
+                <div class="lds-ellipsis" >
+                    <div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/read-excel-file.min.js"></script>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/html-docx.js"></script>
+    <script src="./assets/FileSaver.min.js"></script>
+    <script src="./assets/script.js"></script>
+    <script type="template/html" id="word-template">
+        <div class="copy-block">
+            <h3 class="title">{title}</h3>
+            <div class="copyright"></div>
+        </div>
+    </script>
+</body>
+</html>
